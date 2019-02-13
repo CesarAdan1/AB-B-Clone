@@ -22,7 +22,7 @@
                                                       moduleName:@"ABNB_clone"
                                                initialProperties:nil
                                                    launchOptions:launchOptions];
-  rootView.backgroundColor = [UIColor blackColor];
+  rootView.backgroundColor = [[UIColor alloc] initWithRed:0.39 green:0.58 blue:0.67 alpha:1];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
