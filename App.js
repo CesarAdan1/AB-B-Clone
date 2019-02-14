@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, SafeAreaView} from 'react-native';
+import { AppRegistry, View } from 'react-native';
 import LoggedOut from './src/screens/LoggedOut';
 
 
-export default class App extends Component<Props> {
+class App extends Component {
   render() {
     return (
-      <View style={{backgroundColor: 'white'}}>
+      <View>
         <LoggedOut />
       </View>
-    
     )
   }
 }
 
+AppRegistry.registerComponent('App', () => App);
+
+export default App;
